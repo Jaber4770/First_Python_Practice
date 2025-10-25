@@ -245,3 +245,92 @@ list3 = [True, False, True]
 constructorList = list((1,2,3,4,4))
 print(constructorList, type(constructorList))
 
+
+"""
+Python Collections (Arrays)
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+*Set items are unchangeable, but you can remove and/or add items whenever you like.
+
+**As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+"""
+
+
+fruits = ['apple','mapple', 'tapple', 'capple', 'bapple', 'topple']
+newList = []
+
+for x in fruits:
+    if 'a' in x:
+        newList.append(x)
+    
+print(newList)
+
+
+newlist = [ x for x in fruits if 'a' in x]
+print(newlist)
+
+
+rangeList = [x for x in range(10)]
+print(rangeList)
+
+helloList = ['hello' for x in fruits]
+print(helloList)
+
+
+
+fruits.sort()
+print(fruits)
+fruits.sort(reverse = True)
+print(fruits)
+
+letterList = ['a','b','c']
+listNum = [1,3,4]
+for x in listNum:
+    letterList.append(x)
+print(letterList)
+
+
+#tuple
+tuples = (1,3,4)
+print(tuples)
+
+tu= (1,2,3,4,5)
+print('tuples: ',tu)
+listTup = list(tu)
+print(listTup)
+listTup[1] = 'update'
+ccc = tuple(listTup)
+print(ccc)
+
+color = ('red','green','blue')
+(red,green,blue) = color
+print(red,green,blue)
+(red, *green) = color
+print(red,green)
+
+for c in color:
+    print('color: ',c)
+    
+#loop on touple
+for i in range(len(color)):
+    print(i+1, color[i])
+    
+#using while loop:
+i = 0
+while i<len(color):
+    print('color: ',color[i])
+    i+=1
+    
+
+#set
+
+
+
+
+
+
+
