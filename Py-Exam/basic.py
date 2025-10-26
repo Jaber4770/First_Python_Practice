@@ -357,6 +357,37 @@ print(paglaDict)
 print(type(paglaDict))
 print(type(paglaDict['colors']))
 
+#we can have nested dict
+myfamily = {
+    'child1':{
+        'name':'jack',
+        'age':5
+    },
+    'child2':{
+        'name': 'mack',
+        'age':6
+    }
+}
+print(myfamily)
+print(type(myfamily))
+print(type(myfamily['child1']))
+print(myfamily['child1']['name'])
+
+#loop in dict:
+for x,obj in myfamily.items():
+    print(x)
+    for y in obj:
+        print(y + ":", obj[y])
+
+
+
+#we have arrived at conditions:
+val1= 44
+val2 = 343
+if val1>val2:
+    print('jaha bolecho sotto bolecho')
+else:
+    print("he botsho tmi mittha bolecho.")
 
 
 
