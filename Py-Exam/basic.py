@@ -406,3 +406,12 @@ elif day == 6:
 elif day ==7:
     print('sunday')
 
+#if-elif-else
+v1 = 1
+v2 = 2
+if v1>v2:
+    print('value 1 i greater than value 2')
+elif v1==v2:
+    print('both value are same')
+else:
+    print('vvalue 1 is greater than value 1')
