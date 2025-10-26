@@ -242,7 +242,7 @@ list1 = [1, 2, 3, 4]
 list2 = ['am', 'is', 'are']
 list3 = [True, False, True]
 
-constructorList = list((1,2,3,4,4))
+constructorList = list((1, 2, 3, 4, 4))
 print(constructorList, type(constructorList))
 
 
@@ -260,17 +260,17 @@ Dictionary is a collection which is ordered** and changeable. No duplicate membe
 """
 
 
-fruits = ['apple','mapple', 'tapple', 'capple', 'bapple', 'topple']
+fruits = ['apple', 'mapple', 'tapple', 'capple', 'bapple', 'topple']
 newList = []
 
 for x in fruits:
     if 'a' in x:
         newList.append(x)
-    
+
 print(newList)
 
 
-newlist = [ x for x in fruits if 'a' in x]
+newlist = [x for x in fruits if 'a' in x]
 print(newlist)
 
 
@@ -281,52 +281,51 @@ helloList = ['hello' for x in fruits]
 print(helloList)
 
 
-
 fruits.sort()
 print(fruits)
-fruits.sort(reverse = True)
+fruits.sort(reverse=True)
 print(fruits)
 
-letterList = ['a','b','c']
-listNum = [1,3,4]
+letterList = ['a', 'b', 'c']
+listNum = [1, 3, 4]
 for x in listNum:
     letterList.append(x)
 print(letterList)
 
 
-#tuple
-tuples = (1,3,4)
+# tuple
+tuples = (1, 3, 4)
 print(tuples)
 
-tu= (1,2,3,4,5)
-print('tuples: ',tu)
+tu = (1, 2, 3, 4, 5)
+print('tuples: ', tu)
 listTup = list(tu)
 print(listTup)
 listTup[1] = 'update'
 ccc = tuple(listTup)
 print(ccc)
 
-color = ('red','green','blue')
-(red,green,blue) = color
-print(red,green,blue)
+color = ('red', 'green', 'blue')
+(red, green, blue) = color
+print(red, green, blue)
 (red, *green) = color
-print(red,green)
+print(red, green)
 
 for c in color:
-    print('color: ',c)
-    
-#loop on touple
+    print('color: ', c)
+
+# loop on touple
 for i in range(len(color)):
     print(i+1, color[i])
-    
-#using while loop:
-i = 0
-while i<len(color):
-    print('color: ',color[i])
-    i+=1
-    
 
-#set
+# using while loop:
+i = 0
+while i < len(color):
+    print('color: ', color[i])
+    i += 1
+
+
+# set
 
 set1 = {"a", "b", "c"}
 set2 = {1, 2, 3}
@@ -335,11 +334,11 @@ set4 = {"apple", "bananas", "cherry"}
 
 myset = set1.union(set2, set3, set4)
 print(myset)
- 
- 
-#arrived at dictionary:
+
+
+# arrived at dictionary:
 thisDict = {
-    'brand':'ford',
+    'brand': 'ford',
     'model': 'mustang',
     'year': 1964
 }
@@ -349,23 +348,23 @@ print(thisDict['year'])
 print(len(thisDict))
 
 paglaDict = {
-    'colors': ['red','green','blue'],
+    'colors': ['red', 'green', 'blue'],
     'year': 1010,
-    'true':False
+    'true': False
 }
 print(paglaDict)
 print(type(paglaDict))
 print(type(paglaDict['colors']))
 
-#we can have nested dict
+# we can have nested dict
 myfamily = {
-    'child1':{
-        'name':'jack',
-        'age':5
+    'child1': {
+        'name': 'jack',
+        'age': 5
     },
-    'child2':{
+    'child2': {
         'name': 'mack',
-        'age':6
+        'age': 6
     }
 }
 print(myfamily)
@@ -373,68 +372,102 @@ print(type(myfamily))
 print(type(myfamily['child1']))
 print(myfamily['child1']['name'])
 
-#loop in dict:
-for x,obj in myfamily.items():
+# loop in dict:
+for x, obj in myfamily.items():
     print(x)
     for y in obj:
         print(y + ":", obj[y])
 
 
-
-#we have arrived at conditions:
-val1= 44
+# we have arrived at conditions:
+val1 = 44
 val2 = 343
-if val1>val2:
+if val1 > val2:
     print('jaha bolecho sotto bolecho')
 else:
     print("he botsho tmi mittha bolecho.")
 
-#elif:
+# elif:
 day = 3
-if day ==1:
+if day == 1:
     print('monday')
-elif day ==2:
+elif day == 2:
     print('tuesday')
-elif day ==3:
+elif day == 3:
     print('wednesday')
-elif day ==4:
+elif day == 4:
     print("thursday")
 elif day == 5:
     print("friday'")
 elif day == 6:
     print('saturday')
-elif day ==7:
+elif day == 7:
     print('sunday')
 
-#if-elif-else
+# if-elif-else
 v1 = 1
 v2 = 2
-if v1>v2:
+if v1 > v2:
     print('value 1 i greater than value 2')
-elif v1==v2:
+elif v1 == v2:
     print('both value are same')
 else:
     print('vvalue 1 is greater than value 1')
-    
-    
-#short if-else
-if v1<v2: print('v1 is less than v2.')
 
-print('A') if v1<v2 else print('B')
 
-#assign value with if else
+# short if-else
+if v1 < v2:
+    print('v1 is less than v2.')
+
+print('A') if v1 < v2 else print('B')
+
+# assign value with if else
 a1 = 10
 a2 = 20
-bigger = a1 if a1>a2 else a2
+bigger = a1 if a1 > a2 else a2
 print(bigger)
 
-#logical operator:
+# logical operator:
 c1 = 1
 c2 = 2
 c3 = 3
 if c1 < c2 and c2 < c3:
     print('all conditions are ture')
-if c1 == c3 or c1<c3:
+if c1 == c3 or c1 < c3:
     print("one of them is ture")
 if not c1 == c2:
     print('the condition is false, its true')
+
+# nested if else
+x1 = 41
+if x1 > 10:
+    print('above ten,')
+    if x1 > 20:
+        print('also above tweenty,')
+    else:
+        print("less then 20")
+
+# pass oparator:
+agee = 17
+if agee < 18:
+    pass #todo: add use logic here.
+else:
+    print('access granted')
+
+#match, which is also known as switch
+d=5
+match d:
+    case 1:
+        print('the number is 1')
+    case 2:
+        print('number is 2')
+    case 3:
+        print("the number is 3")
+    case 4:
+        print('the number 4')
+    case 5:
+        print("5")
+    case 6:
+        print('6')
+    case 7:
+        print('7')
