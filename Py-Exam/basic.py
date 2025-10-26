@@ -415,3 +415,26 @@ elif v1==v2:
     print('both value are same')
 else:
     print('vvalue 1 is greater than value 1')
+    
+    
+#short if-else
+if v1<v2: print('v1 is less than v2.')
+
+print('A') if v1<v2 else print('B')
+
+#assign value with if else
+a1 = 10
+a2 = 20
+bigger = a1 if a1>a2 else a2
+print(bigger)
+
+#logical operator:
+c1 = 1
+c2 = 2
+c3 = 3
+if c1 < c2 and c2 < c3:
+    print('all conditions are ture')
+if c1 == c3 or c1<c3:
+    print("one of them is ture")
+if not c1 == c2:
+    print('the condition is false, its true')
