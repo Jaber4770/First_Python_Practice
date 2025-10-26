@@ -335,6 +335,9 @@ set4 = {"apple", "bananas", "cherry"}
 
 myset = set1.union(set2, set3, set4)
 print(myset)
+ 
+ 
+#arrived at dictionary:
 
 
 
