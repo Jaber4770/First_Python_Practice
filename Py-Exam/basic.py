@@ -338,7 +338,24 @@ print(myset)
  
  
 #arrived at dictionary:
+thisDict = {
+    'brand':'ford',
+    'model': 'mustang',
+    'year': 1964
+}
+print(thisDict)
+print(type(thisDict))
+print(thisDict['year'])
+print(len(thisDict))
 
+paglaDict = {
+    'colors': ['red','green','blue'],
+    'year': 1010,
+    'true':False
+}
+print(paglaDict)
+print(type(paglaDict))
+print(type(paglaDict['colors']))
 
 
 
