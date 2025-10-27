@@ -574,3 +574,8 @@ def findMax(*numbers):
 max = findMax(1,2,3,40,5,6)
 print(max)
 
+
+#lambda with build in function
+nums = [1,2,3,4,5]
+double = list(map(lambda a:a*2, nums))
+print(double)
