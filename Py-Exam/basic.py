@@ -601,3 +601,59 @@ def factorial(n):
         return n * factorial(n-1)
 
 print(factorial(5))
+
+#fibonacchi
+def fibonachhi(n):
+    if n<=1:
+        return n
+    else:
+        return fibonachhi(n-1) + fibonachhi(n-2)
+    
+print('fibonachhi', fibonachhi(7))
+
+#recursion with list
+def sum_list(numbers):
+    if len(numbers) == 0:
+        return 0
+    else:
+        return numbers[0] + sum_list(numbers[1:])
+sumList  = [1,2,3,4,5,6,7]
+print(sum_list(sumList))
+
+#find max value in the list:
+def find_max(numbers):
+    if len(numbers) ==1:
+        return numbers[0]
+    else:
+        maxOfTheRest = find_max(numbers[1:])
+        return numbers[0] if numbers[0]>maxOfTheRest else maxOfTheRest
+myListt = [1,2,3,4,6,5]
+print(find_max(myListt))
+
+#recursion limit
+import sys
+print('recursion limit: ',sys.getrecursionlimit())
+# sys.setrecursionlimit(2000)
+print(sys.getrecursionlimit())
+
+#generators
+def myGenerator():
+    yield 11
+    yield 22
+    yield 33
+    yield 44
+    
+    
+for value in myGenerator():
+    print(value)
+
+def large_sequence(n):
+    for i in range(n):
+        yield i
+gen = large_sequence(1000000)
+print(next(gen))
+print(next(gen))
+
+
+
+
