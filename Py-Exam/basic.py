@@ -450,12 +450,12 @@ if x1 > 10:
 # pass oparator:
 agee = 17
 if agee < 18:
-    pass #todo: add use logic here.
+    pass  # todo: add use logic here.
 else:
     print('access granted')
 
-#match, which is also known as switch
-d=5
+# match, which is also known as switch
+d = 50
 match d:
     case 1:
         print('the number is 1')
@@ -469,5 +469,108 @@ match d:
         print("5")
     case 6:
         print('6')
-    case 7:
+    case _:
         print('7')
+
+# loop:
+mangos = ['mango1', 'mango2', 'mango3']
+for x in mangos:
+    if x == 'mango2':
+        continue
+    print(x)
+
+for x in mangos:
+    if x == 'mango2':
+        break
+    print(x)
+
+# loop with range:
+for x in range(3, 33, 2):
+    print(x)
+
+# reached at funtion
+
+
+def gretings(a):
+    print('ki obosta?', a)
+
+
+gretings('bro')
+
+# sum func
+
+
+def sum(a, b):
+    return a+b
+
+
+print(sum(1, 2))
+print(sum(2, 3))
+
+
+def my_function(fname):
+    print(fname + ' Refsnes')
+
+
+my_function('Emil')
+my_function('tobias')
+my_function('linus')
+
+# default value:
+
+
+def my_friend(name='friend'):
+    print('hello ', name)
+
+
+my_friend('emil')
+my_friend('')
+my_friend('jemil')
+
+
+# positional arguments and  keyword arguments:
+def positionalKeyArgu(a, b, /, *, c, d):
+    print(a, b, c, d)
+
+
+result = positionalKeyArgu(1, 2, c=3, d=4)
+print(result)
+
+
+# multiple arguments
+def multiArgu(*kids):
+    print('they have a kid name: ', kids[0])
+    print('they have a kid name: ', kids[1])
+    print('they have a kid name: ', kids[2])
+
+
+multiArgu('emil', 'jemil', 'temil', 'memil')
+
+
+# basic problems:
+def sumso(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+
+print(sumso(1, 2, 3))
+print(sumso(10, 20, 30))
+print(sumso(10, 20, 30, 40))
+print(sumso(5))
+
+# Finding the maximum value:
+
+
+def findMax(*numbers):
+    if len(numbers) == 0:
+        return None
+    max_num = numbers[0]
+    for num in numbers:
+        if max_num<num:
+            max_num = num
+    return max_num
+max = findMax(1,2,3,40,5,6)
+print(max)
+
