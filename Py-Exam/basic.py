@@ -579,3 +579,25 @@ print(max)
 nums = [1,2,3,4,5]
 double = list(map(lambda a:a*2, nums))
 print(double)
+
+filtered = list(filter(lambda a:a %2 != 0, nums))
+print(filtered)
+
+#python recursive
+def countdown(n):
+    if n<=0:
+        print('Done!')
+    else:
+        print(n)
+        countdown(n-1)
+        
+countdown(5)
+
+#factorial
+def factorial(n):
+    if n==1 or n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
