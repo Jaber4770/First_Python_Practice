@@ -206,7 +206,16 @@ print(uniqueCity)
 #    "Dhaka": ["A", "C"],
 #    "Chittagong": ["B"]
 # }
+groupDict = {}
+for person in people:
+    city_name = person['city']
+    person_name = person['name']
 
+    if city_name not in groupDict:
+        groupDict[city_name] = []
+    groupDict[city_name].append(person_name)
+                               
+print(groupDict)
 
 # List Flattening
 # Nested list [ [1,2], [3,4,5], [6] ] কে একটিমাত্র flat list বানাও: [1,2,3,4,5,6]
