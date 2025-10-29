@@ -667,9 +667,48 @@ print(r.year)
 print(r.hour)
 print(r.strftime('%A'))
 
+#py math
+minn = min(1,2,3,4)
+print(minn)
 
+# maxx = max(5, 10, 25)
+# print(maxx)
+abbss = abs(-4455)
+print(abbss)
 
+poww = pow(3,4)
+print(poww)
 
+import math
+sqr = math.sqrt(64)
+print(sqr)
 
+lower = math.floor(5.6)
+print(lower)
+higher = math.ceil(5.4)
+print(higher)
 
+print(math.pi)
+
+#try except else finally
+try:
+    print("hello")
+except:
+    print('something went wrong')
+else:
+    print('nothing went wrong')
+    
+    
+#input
+print('enter your name here: ')
+name = input()
+print(f"hello {name}")
+
+#some inputss:
+name = input("enter your name: ")
+print(f"hello {name}")
+fav1 = input("What is your fav game: ")
+fav2 = input("what is your fav color: ")
+fav3 = input("what is your fav number: ")
+print(f"do you want a {fav2} {fav1} with {fav3} leg?")
 
