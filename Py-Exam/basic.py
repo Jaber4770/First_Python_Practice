@@ -712,3 +712,13 @@ fav2 = input("what is your fav color: ")
 fav3 = input("what is your fav number: ")
 print(f"do you want a {fav2} {fav1} with {fav3} leg?")
 
+
+bbb = True
+while bbb == True:
+    x = input("enter a number: ")
+    try:
+        x = float(x)
+        bbb = False
+    except:
+        print("wrong input, please try again.")
+print('thanks')
