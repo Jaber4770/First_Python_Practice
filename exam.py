@@ -1,3 +1,4 @@
+#basic problem
 print("hello exam!")
 #sum of the list
 sumList = [1,2,3,4,5,6,6,7,8,9,10]
@@ -67,3 +68,107 @@ squreList = []
 for x in regularList:
     squreList.append(x*x)
 print(squreList)
+
+
+#Moderate Level (8–14)
+
+#List to Dictionary (Index as Key)
+#একটি list কে dictionary তে রূপান্তর করো যেখানে key হবে index, আর value হবে list এর element।
+theList = ['abul','dabul', 'kabul', 'chabul','dabul', 'babul', 'tabul','dabul','dabul','mabul','dabul']
+theDict = {}
+for x in range(len(theList)):
+    theDict[x] = theList[x]
+print("the dictionary by the list: ",theDict)
+
+#Dictionary from Two Lists
+#দুটি list দেওয়া আছে — একটি keys আর একটি values।
+#এগুলো দিয়ে একটি dictionary বানাও।
+
+
+#Filter Dictionary by Value
+#একটি dictionary থেকে যেসব value ৫০ এর বেশি সেগুলো রেখে বাকিগুলো বাদ দাও।
+
+
+#Count Word Frequency
+#একটি বাক্য দেওয়া আছে — প্রতিটি শব্দ কয়বার এসেছে তা dictionary তে সংরক্ষণ করো।
+
+
+#Find Common Elements
+#দুটি list দেওয়া আছে — কোন কোন element দুটোতেই common আছে তা বের করো।
+
+
+#Merge Dictionaries
+#দুটি dictionary merge করো (যদি একই key থাকে, দ্বিতীয়টার value ব্যবহার করো)।
+
+
+#List of Dictionaries Sorting
+#নিচের মতো list দেওয়া আছে:
+#
+#students = [
+#    {"name": "A", "score": 85},
+#    {"name": "B", "score": 92},
+#    {"name": "C", "score": 78}
+#]
+#এটাকে score অনুযায়ী descending অর্ডারে sort করো।
+
+#Advanced Level (15–20)
+#
+#Nested Dictionary Access
+#নিচের dictionary থেকে “Python” এর score বের করো:
+#
+#data = {
+#    "student": {
+#        "name": "Jaber",
+#        "scores": {"Math": 90, "Python": 95, "English": 88}
+#    }
+#}
+
+
+
+
+#Unique Values from List of Dicts
+#নিচের list থেকে সব unique city বের করো:
+#
+#people = [
+#    {"name": "A", "city": "Dhaka"},
+#    {"name": "B", "city": "Chittagong"},
+#    {"name": "C", "city": "Dhaka"}
+#]
+#
+
+
+
+#Group People by City
+#উপরের list থেকে city অনুযায়ী group করো।
+#Output এর মতো হওয়া উচিত:
+#
+#{
+#    "Dhaka": ["A", "C"],
+#    "Chittagong": ["B"]
+#}
+
+
+
+#List Flattening
+#Nested list [ [1,2], [3,4,5], [6] ] কে একটিমাত্র flat list বানাও: [1,2,3,4,5,6]
+#
+#Top 3 Highest Scores
+#একটি dictionary দেওয়া আছে:
+#
+#marks = {"A": 85, "B": 92, "C": 78, "D": 88, "E": 95}
+#
+#
+#সর্বোচ্চ তিনজন ছাত্রের নাম ও নম্বর বের করো।
+#
+#Inventory Management
+#নিচের মতো একটি dictionary দেওয়া আছে:
+#
+#inventory = {
+#    "apple": {"price": 30, "quantity": 50},
+#    "banana": {"price": 10, "quantity": 100},
+#    "orange": {"price": 20, "quantity": 80}
+#}
+#
+#
+#একটি প্রোগ্রাম লেখো যা total value (price × quantity) হিসাব করবে প্রতিটি item এর এবং শেষে মোট value প্রিন্ট করবে।
+#
