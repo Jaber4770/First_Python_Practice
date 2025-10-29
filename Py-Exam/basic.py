@@ -655,6 +655,21 @@ print(next(gen))
 print(next(gen))
 print(next(gen))
 
+#module:
+#we can create a .py file and then its possible to access the file, function inside it, or anything
+
+
+#py date
+import datetime
+r = datetime.datetime.now()
+print(r)
+print(r.year)
+print(r.hour)
+print(r.strftime('%A'))
+
+
+
+
 
 
 
