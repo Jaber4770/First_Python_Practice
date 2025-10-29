@@ -115,25 +115,55 @@ print('lower filtered: ', lowerFiltered)
 
 # Count Word Frequency
 # একটি বাক্য দেওয়া আছে — প্রতিটি শব্দ কয়বার এসেছে তা dictionary তে সংরক্ষণ করো।
-
+theSentence = "the quick brown fox jumps over the lazy dog the fox is qucik and the dog is lazy"
+splitedSentence = theSentence.split(' ')
+countedDict = {}
+for word in splitedSentence:
+    if word not in countedDict:
+        countedDict[word]=1
+    else:
+        countedDict[word]=countedDict[word] + 1
+        
+print(countedDict)
 
 # Find Common Elements
 # দুটি list দেওয়া আছে — কোন কোন element দুটোতেই common আছে তা বের করো।
+list11 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+list22 = [5, 6, 7, 8, 9, 10, 11, 12, 13]
+list33 = []
 
+for x in list11:
+    if x in list22:
+        list33.append(x)
+print(list33)
 
 # Merge Dictionaries
 # দুটি dictionary merge করো (যদি একই key থাকে, দ্বিতীয়টার value ব্যবহার করো)।
+dict1 = {'a': 1, 'b': 2, 'c': 3}
+dict2 = {'c': 30, 'd': 4, 'e': 5}
+margedDict = dict1.copy()
+margedDict.update(dict2)
 
 
 # List of Dictionaries Sorting
 # নিচের মতো list দেওয়া আছে:
-#
 # students = [
 #    {"name": "A", "score": 85},
 #    {"name": "B", "score": 92},
 #    {"name": "C", "score": 78}
 # ]
 # এটাকে score অনুযায়ী descending অর্ডারে sort করো।
+students = [
+    {"name": "A", "score": 85},
+    {"name": "B", "score": 92},
+    {"name": "C", "score": 78}
+ ]
+sortedStu = sorted(students, key = lambda x:x['score'], reverse=True)
+print(sortedStu)
+
+sorted_student = sorted(students, key=lambda x:x["score"], reverse=True)
+print(sorted_student)
+
 
 # Advanced Level (15–20)
 #
