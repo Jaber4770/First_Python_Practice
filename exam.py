@@ -107,9 +107,9 @@ for key, value in original_dict.items():
 print('filtered dict: ', filtered_Dict)
 
 lowerFiltered = {}
-for key,value in original_dict.items():
-    if value<50:
-        lowerFiltered[key]=value
+for key, value in original_dict.items():
+    if value < 50:
+        lowerFiltered[key] = value
 print('lower filtered: ', lowerFiltered)
 
 
@@ -120,10 +120,10 @@ splitedSentence = theSentence.split(' ')
 countedDict = {}
 for word in splitedSentence:
     if word not in countedDict:
-        countedDict[word]=1
+        countedDict[word] = 1
     else:
-        countedDict[word]=countedDict[word] + 1
-        
+        countedDict[word] = countedDict[word] + 1
+
 print(countedDict)
 
 # Find Common Elements
@@ -157,11 +157,11 @@ students = [
     {"name": "A", "score": 85},
     {"name": "B", "score": 92},
     {"name": "C", "score": 78}
- ]
-sortedStu = sorted(students, key = lambda x:x['score'], reverse=True)
+]
+sortedStu = sorted(students, key=lambda x: x['score'], reverse=True)
 print(sortedStu)
 
-sorted_student = sorted(students, key=lambda x:x["score"], reverse=True)
+sorted_student = sorted(students, key=lambda x: x["score"], reverse=True)
 print(sorted_student)
 
 
@@ -170,24 +170,33 @@ print(sorted_student)
 # Nested Dictionary Access
 # নিচের dictionary থেকে “Python” এর score বের করো:
 #
-# data = {
-#    "student": {
-#        "name": "Jaber",
-#        "scores": {"Math": 90, "Python": 95, "English": 88}
-#    }
-# }
+data = {
+    "student": {
+        "name": "Jaber",
+        "scores": {"Math": 90, "Python": 95, "English": 88}
+    }
+}
+print(data["student"]["scores"]["Python"])
 
 
 # Unique Values from List of Dicts
 # নিচের list থেকে সব unique city বের করো:
 #
-# people = [
-#    {"name": "A", "city": "Dhaka"},
-#    {"name": "B", "city": "Chittagong"},
-#    {"name": "C", "city": "Dhaka"}
-# ]
-#
+people = [
+    {"name": "A", "city": "Dhaka"},
+    {"name": "B", "city": "Chittagong"},
+    {"name": "C", "city": "Dhaka"}
+]
+uniqueCity = []
+for person in people:
+    if person['city'] not in uniqueCity:
+        uniqueCity.append(person['city'])
+print(uniqueCity)
 
+for person in people:
+    if person['city'] not in uniqueCity:
+        uniqueCity.append[person['city']]
+print(uniqueCity)
 
 # Group People by City
 # উপরের list থেকে city অনুযায়ী group করো।
