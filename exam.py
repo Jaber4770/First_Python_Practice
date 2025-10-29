@@ -219,24 +219,34 @@ print(groupDict)
 
 # List Flattening
 # Nested list [ [1,2], [3,4,5], [6] ] কে একটিমাত্র flat list বানাও: [1,2,3,4,5,6]
-#
 # Top 3 Highest Scores
+nestedList = [ [1,2], [3,4,5], [6] ]
+flatList = []
+for list in nestedList:
+    flatList.extend(list)
+print(flatList)
+
 # একটি dictionary দেওয়া আছে:
-#
-# marks = {"A": 85, "B": 92, "C": 78, "D": 88, "E": 95}
-#
-#
 # সর্বোচ্চ তিনজন ছাত্রের নাম ও নম্বর বের করো।
-#
+marks = {"A": 85, "B": 92, "C": 78, "D": 88, "E": 95}
+sorted_marks = sorted(marks.items(), key=lambda x:x[1], reverse=True)
+print(sorted_marks)
+    
 # Inventory Management
 # নিচের মতো একটি dictionary দেওয়া আছে:
-#
-# inventory = {
-#    "apple": {"price": 30, "quantity": 50},
-#    "banana": {"price": 10, "quantity": 100},
-#    "orange": {"price": 20, "quantity": 80}
-# }
-#
-#
 # একটি প্রোগ্রাম লেখো যা total value (price × quantity) হিসাব করবে প্রতিটি item এর এবং শেষে মোট value প্রিন্ট করবে।
-#
+inventory = {
+   "apple": {"price": 30, "quantity": 50},
+   "banana": {"price": 10, "quantity": 100},
+   "orange": {"price": 20, "quantity": 80}
+}
+
+totalPrice = 0
+for product in inventory:
+    price = inventory[product]['price']
+    quantity = inventory[product]['quantity']
+    total = price * quantity
+    totalPrice += total
+        
+print(totalPrice)
+
