@@ -1,7 +1,7 @@
-#basic problem
+# basic problem
 print("hello exam!")
-#sum of the list
-sumList = [1,2,3,4,5,6,6,7,8,9,10]
+# sum of the list
+sumList = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10]
 sum = 0
 for x in sumList:
     sum += x
@@ -13,18 +13,19 @@ max_ = sumList[0]
 
 for x in sumList:
     if min_ > x:
-        min_ =x
+        min_ = x
     if max_ < x:
         max_ = x
-        
-print('min: ', min_ ,'and the max is: ', max_)
+
+print('min: ', min_, 'and the max is: ', max_)
 print('min: ', min(sumList))
 print('max: ', max(sumList))
 
 
-#Even & Odd Split
-#একটি list থেকে সব জোড় সংখ্যা এবং বিজোড় সংখ্যা আলাদা দুইটা list এ রাখো।
-eventOddList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# Even & Odd Split
+# একটি list থেকে সব জোড় সংখ্যা এবং বিজোড় সংখ্যা আলাদা দুইটা list এ রাখো।
+eventOddList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+                11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 evenNumber = []
 oddNumber = []
 for x in eventOddList:
@@ -35,140 +36,159 @@ for x in eventOddList:
 print("evenNumber: ", evenNumber)
 print("oddNumber: ", oddNumber)
 
-#Count Occurrence
-#একটি list এ একটি নির্দিষ্ট সংখ্যাটি কতবার এসেছে তা গণনা করো।
-countList = [1,2,3,1,3,4,3,5,3,6,7,3,8,9,3,3,10,3]
+# Count Occurrence
+# একটি list এ একটি নির্দিষ্ট সংখ্যাটি কতবার এসেছে তা গণনা করো।
+countList = [1, 2, 3, 1, 3, 4, 3, 5, 3, 6, 7, 3, 8, 9, 3, 3, 10, 3]
 count = 0
 for x in countList:
     if x == 3:
         count += 1
 print("the number 3 is available on the list: ", count, 'times')
 
-#Remove Duplicates
-#একটি list থেকে ডুপ্লিকেট এলিমেন্ট বাদ দিয়ে নতুন list তৈরি করো।
-duplicateList = ['abul','dabul', 'kabul', 'chabul','dabul', 'babul', 'tabul','dabul','dabul','mabul','dabul']
+# Remove Duplicates
+# একটি list থেকে ডুপ্লিকেট এলিমেন্ট বাদ দিয়ে নতুন list তৈরি করো।
+duplicateList = ['abul', 'dabul', 'kabul', 'chabul', 'dabul',
+                 'babul', 'tabul', 'dabul', 'dabul', 'mabul', 'dabul']
 removedDuplicate = []
 for x in duplicateList:
     if x not in removedDuplicate:
         removedDuplicate.append(x)
-print("duplicate removed: ",removedDuplicate)
+print("duplicate removed: ", removedDuplicate)
 
-#Reverse List Without reverse()
-#লুপ ব্যবহার করে একটি list উল্টে দাও (reverse করো)।
-rightList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# Reverse List Without reverse()
+# লুপ ব্যবহার করে একটি list উল্টে দাও (reverse করো)।
+rightList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+             11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 reversedList = []
-for x in range(len(rightList)-1,-1,-1):
+for x in range(len(rightList)-1, -1, -1):
     reversedList.append(rightList[x])
 print(reversedList)
 
-#Square of Numbers
-#একটি list এর প্রতিটি সংখ্যার বর্গ করে নতুন list তৈরি করো।
-regularList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+# Square of Numbers
+# একটি list এর প্রতিটি সংখ্যার বর্গ করে নতুন list তৈরি করো।
+regularList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+               11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 squreList = []
 for x in regularList:
     squreList.append(x*x)
 print(squreList)
 
 
-#Moderate Level (8–14)
+# Moderate Level (8–14)
 
-#List to Dictionary (Index as Key)
-#একটি list কে dictionary তে রূপান্তর করো যেখানে key হবে index, আর value হবে list এর element।
-theList = ['abul','dabul', 'kabul', 'chabul','dabul', 'babul', 'tabul','dabul','dabul','mabul','dabul']
+# List to Dictionary (Index as Key)
+# একটি list কে dictionary তে রূপান্তর করো যেখানে key হবে index, আর value হবে list এর element।
+theList = ['abul', 'dabul', 'kabul', 'chabul', 'dabul',
+           'babul', 'tabul', 'dabul', 'dabul', 'mabul', 'dabul']
 theDict = {}
 for x in range(len(theList)):
     theDict[x] = theList[x]
-print("the dictionary by the list: ",theDict)
+print("the dictionary by the list: ", theDict)
 
-#Dictionary from Two Lists
-#দুটি list দেওয়া আছে — একটি keys আর একটি values।
-#এগুলো দিয়ে একটি dictionary বানাও।
+# Dictionary from Two Lists
+# দুটি list দেওয়া আছে — একটি keys আর একটি values।
+# এগুলো দিয়ে একটি dictionary বানাও।
+list1 = ['abul', 'dabul', 'kabul', 'chabul', 'dabul',
+         'babul', 'tabul', 'dabul', 'dabul', 'mabul', 'dabul']
+list2 = ['abul', 'dabul', 'kabul', 'chabul', 'dabul',
+         'babul', 'tabul', 'dabul', 'dabul', 'mabul', 'dabul']
+createdDict = {}
+for index, value in enumerate(list1):
+    createdDict[value] = list2[index]
+print(createdDict)
+
+# Filter Dictionary by Value
+# একটি dictionary থেকে যেসব value ৫০ এর বেশি সেগুলো রেখে বাকিগুলো বাদ দাও।
+original_dict = {'a': 45, 'b': 67, 'c': 23, 'd': 89, 'e': 52, 'f': 38, 'g': 71}
+filtered_Dict = {}
+for key, value in original_dict.items():
+    if value > 50:
+        filtered_Dict[key] = value
+print('filtered dict: ', filtered_Dict)
+
+lowerFiltered = {}
+for key,value in original_dict.items():
+    if value<50:
+        lowerFiltered[key]=value
+print('lower filtered: ', lowerFiltered)
 
 
-#Filter Dictionary by Value
-#একটি dictionary থেকে যেসব value ৫০ এর বেশি সেগুলো রেখে বাকিগুলো বাদ দাও।
+# Count Word Frequency
+# একটি বাক্য দেওয়া আছে — প্রতিটি শব্দ কয়বার এসেছে তা dictionary তে সংরক্ষণ করো।
 
 
-#Count Word Frequency
-#একটি বাক্য দেওয়া আছে — প্রতিটি শব্দ কয়বার এসেছে তা dictionary তে সংরক্ষণ করো।
+# Find Common Elements
+# দুটি list দেওয়া আছে — কোন কোন element দুটোতেই common আছে তা বের করো।
 
 
-#Find Common Elements
-#দুটি list দেওয়া আছে — কোন কোন element দুটোতেই common আছে তা বের করো।
+# Merge Dictionaries
+# দুটি dictionary merge করো (যদি একই key থাকে, দ্বিতীয়টার value ব্যবহার করো)।
 
 
-#Merge Dictionaries
-#দুটি dictionary merge করো (যদি একই key থাকে, দ্বিতীয়টার value ব্যবহার করো)।
-
-
-#List of Dictionaries Sorting
-#নিচের মতো list দেওয়া আছে:
+# List of Dictionaries Sorting
+# নিচের মতো list দেওয়া আছে:
 #
-#students = [
+# students = [
 #    {"name": "A", "score": 85},
 #    {"name": "B", "score": 92},
 #    {"name": "C", "score": 78}
-#]
-#এটাকে score অনুযায়ী descending অর্ডারে sort করো।
+# ]
+# এটাকে score অনুযায়ী descending অর্ডারে sort করো।
 
-#Advanced Level (15–20)
+# Advanced Level (15–20)
 #
-#Nested Dictionary Access
-#নিচের dictionary থেকে “Python” এর score বের করো:
+# Nested Dictionary Access
+# নিচের dictionary থেকে “Python” এর score বের করো:
 #
-#data = {
+# data = {
 #    "student": {
 #        "name": "Jaber",
 #        "scores": {"Math": 90, "Python": 95, "English": 88}
 #    }
-#}
+# }
 
 
-
-
-#Unique Values from List of Dicts
-#নিচের list থেকে সব unique city বের করো:
+# Unique Values from List of Dicts
+# নিচের list থেকে সব unique city বের করো:
 #
-#people = [
+# people = [
 #    {"name": "A", "city": "Dhaka"},
 #    {"name": "B", "city": "Chittagong"},
 #    {"name": "C", "city": "Dhaka"}
-#]
+# ]
 #
 
 
-
-#Group People by City
-#উপরের list থেকে city অনুযায়ী group করো।
-#Output এর মতো হওয়া উচিত:
+# Group People by City
+# উপরের list থেকে city অনুযায়ী group করো।
+# Output এর মতো হওয়া উচিত:
 #
-#{
+# {
 #    "Dhaka": ["A", "C"],
 #    "Chittagong": ["B"]
-#}
+# }
 
 
-
-#List Flattening
-#Nested list [ [1,2], [3,4,5], [6] ] কে একটিমাত্র flat list বানাও: [1,2,3,4,5,6]
+# List Flattening
+# Nested list [ [1,2], [3,4,5], [6] ] কে একটিমাত্র flat list বানাও: [1,2,3,4,5,6]
 #
-#Top 3 Highest Scores
-#একটি dictionary দেওয়া আছে:
+# Top 3 Highest Scores
+# একটি dictionary দেওয়া আছে:
 #
-#marks = {"A": 85, "B": 92, "C": 78, "D": 88, "E": 95}
+# marks = {"A": 85, "B": 92, "C": 78, "D": 88, "E": 95}
 #
 #
-#সর্বোচ্চ তিনজন ছাত্রের নাম ও নম্বর বের করো।
+# সর্বোচ্চ তিনজন ছাত্রের নাম ও নম্বর বের করো।
 #
-#Inventory Management
-#নিচের মতো একটি dictionary দেওয়া আছে:
+# Inventory Management
+# নিচের মতো একটি dictionary দেওয়া আছে:
 #
-#inventory = {
+# inventory = {
 #    "apple": {"price": 30, "quantity": 50},
 #    "banana": {"price": 10, "quantity": 100},
 #    "orange": {"price": 20, "quantity": 80}
-#}
+# }
 #
 #
-#একটি প্রোগ্রাম লেখো যা total value (price × quantity) হিসাব করবে প্রতিটি item এর এবং শেষে মোট value প্রিন্ট করবে।
+# একটি প্রোগ্রাম লেখো যা total value (price × quantity) হিসাব করবে প্রতিটি item এর এবং শেষে মোট value প্রিন্ট করবে।
 #
