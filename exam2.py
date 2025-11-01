@@ -1,11 +1,9 @@
-#
 ### 🎓 **Python Problem Set (University 1st Year Level)**
-#
 #### 🧩 **Part 1 — Basics (1–10)**
 #
 #1. **Temperature Converter**
 #   Convert temperature from Celsius to Fahrenheit and vice versa using user input.
-#
+
 #2. **Simple Interest Calculator**
 #   Input `principal`, `rate`, and `time`, then calculate the simple interest.
 #
