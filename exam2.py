@@ -130,4 +130,161 @@
 #* `part3_functions_and_files.py`
 #  ?
 #  That would be great for structured learning and practicing.
+
+
+#------------------------------------------------------------------------------------------------------
 #
+### 📘 **25 More University-Level Python Problems (List, Dict, Set, Tuple Focused)**
+#
+#### ✅ **List-Based Problems**
+#
+#1. **List Rotation**
+#   Rotate a list to the right by *k* positions.
+#   Example: `[1,2,3,4,5], k=2 → [4,5,1,2,3]`
+#
+#2. **Find Second Lowest and Second Highest**
+#   Given a list of numbers, print 2nd smallest and 2nd largest elements.
+#
+#3. **Split List into Even and Odd Index Lists**
+#   For a given list, create two new lists:
+#
+#   * One containing elements at even indexes
+#   * One containing elements at odd indexes
+#
+#4. **Replace All Occurrences**
+#   Replace all occurrences of a given number in a list with another number.
+#
+#5. **List of Squares Without Loop (Using List Comprehension)**
+#   Input `n` → create list of squares from 1 to n.
+#
+#6. **Common and Unique Elements in Two Lists**
+#   Given two lists, print:
+#
+#   * Elements common in both
+#   * Elements only in first list
+#   * Elements only in second list
+#
+#7. **Sort List of Tuples by Second Value**
+#   Example:
+#
+#   ```
+#   data = [(1, 5), (3, 2), (6, 8)]
+#   Output: sorted ascending by 2nd value → [(3,2), (1,5), (6,8)]
+#   ```
+#
+#8. **Remove Elements Greater Than a Given Value**
+#   Given a list and a number x, remove all elements greater than x.
+#
+#9. **Find Duplicate Elements in a List**
+#   Input: `[1,2,3,2,4,3,5]` → Output: `[2,3]`
+#
+#10. **Flatten a Nested List (One Level)**
+#    Example:
+#
+#    ```
+#    Input: [[1,2], [3,4,5], [6]]
+#    Output: [1,2,3,4,5,6]
+#    ```
+#
+#---
+#
+#### 🟩 **Dictionary-Based Problems**
+#
+#11. **Frequency of Characters in a String (Using Dict)**
+#    Input: `"BANANA"` → Output: `{'B':1,'A':3,'N':2}`
+#
+#12. **Swap Keys and Values in a Dictionary**
+#    Example:
+#    `{"a":1, "b":2, "c":3}` → `{1:"a", 2:"b", 3:"c"}`
+#
+#13. **Delete a Key from Dictionary if Exists**
+#    Ask user for a key → if found, delete it, else show "Key not found".
+#
+#14. **Students Marks Analysis**
+#    Given a dict of students and their marks:
+#
+#    * Find highest mark
+#    * Print names of students who passed (≥ 40)
+#
+#15. **Count Word Lengths in a Sentence**
+#    Input: `"Python is easy"`
+#    Output: `{ "Python":6, "is":2, "easy":4 }`
+#
+#16. **Merge Two Dictionaries (Without Built-in .update())**
+#    If both have same key, sum their values.
+#    Example:
+#
+#    ```
+#    A={"a":3,"b":2}, B={"b":4,"c":5}
+#    Output: {"a":3,"b":6,"c":5}
+#    ```
+#
+#17. **Dictionary Sorting by Key and Value**
+#    Given a dict:
+#
+#    * Print dict sorted by keys
+#    * Print dict sorted by values
+#
+#18. **Group Words by First Letter**
+#    Input: `["cat","car","dog","apple","door"]`
+#    Output:
+#
+#    ```
+#    {
+#       'c': ['cat','car'],
+#       'd': ['dog','door'],
+#       'a': ['apple']
+#    }
+#    ```
+#
+#19. **Create a Frequency Dictionary from List of Tuples**
+#    Example input: `[("A",10),("B",20),("A",5)]`
+#    Output: `{"A":15,"B":20}`
+#
+#20. **Invert Nested Dictionary Mapping**
+#
+#    ```
+#    data = {"Dhaka": ["A","B"], "Chittagong": ["C"]}
+#    Output: {"A":"Dhaka","B":"Dhaka","C":"Chittagong"}
+#    ```
+#
+#---
+#
+#### 🟧 **Set-Based Problems**
+#
+#21. **Set Operations**
+#    Given two sets, perform: union, intersection, difference, symmetric difference.
+#
+#22. **Find Unique Words in a Sentence Using Set**
+#    Input: `"python is fun and python is powerful"`
+#    Output: unique words as a set.
+#
+#23. **Remove Duplicate Characters from a Word**
+#    Input: `"balloon"` → Output: `"balon"` (order not important)
+#
+#24. **Check if Two Words are Anagrams Using Set**
+#    Example: `"listen"` and `"silent"` → True
+#
+#25. **Set from List of Tuples**
+#    Convert a list of tuples into a set of unique tuples.
+#    Input: `[(1,2),(2,3),(1,2)]` → `{(1,2),(2,3)}`
+#
+#---
+#
+#### 🟪 **Tuple-Based (Short Exam-Style) Problems — Optional If Needed**
+#
+#*(Say "send more tuple problems" if you want 10 more specifically on tuple)*
+#
+#---
+#
+#If you want, I can now:
+#✅ Turn this into a **PDF exam sheet**
+#✅ Provide **solutions** separately or with hints
+#✅ Create a **practice workbook (.py)** with placeholders
+#
+#Would you like next:
+#A) **Solutions for all 25**
+#B) More Problems (another 25)?
+#C) Convert to Exam Question Paper format (with marks)?
+#
+##
