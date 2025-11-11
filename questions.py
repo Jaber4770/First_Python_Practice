@@ -250,41 +250,4 @@
 #
 #---
 #
-#### 🟧 **Set-Based Problems**
 #
-#21. **Set Operations**
-#    Given two sets, perform: union, intersection, difference, symmetric difference.
-#
-#22. **Find Unique Words in a Sentence Using Set**
-#    Input: `"python is fun and python is powerful"`
-#    Output: unique words as a set.
-#
-#23. **Remove Duplicate Characters from a Word**
-#    Input: `"balloon"` → Output: `"balon"` (order not important)
-#
-#24. **Check if Two Words are Anagrams Using Set**
-#    Example: `"listen"` and `"silent"` → True
-#
-#25. **Set from List of Tuples**
-#    Convert a list of tuples into a set of unique tuples.
-#    Input: `[(1,2),(2,3),(1,2)]` → `{(1,2),(2,3)}`
-#
-#---
-#
-#### 🟪 **Tuple-Based (Short Exam-Style) Problems — Optional If Needed**
-#
-#*(Say "send more tuple problems" if you want 10 more specifically on tuple)*
-#
-#---
-#
-#If you want, I can now:
-#✅ Turn this into a **PDF exam sheet**
-#✅ Provide **solutions** separately or with hints
-#✅ Create a **practice workbook (.py)** with placeholders
-#
-#Would you like next:
-#A) **Solutions for all 25**
-#B) More Problems (another 25)?
-#C) Convert to Exam Question Paper format (with marks)?
-#
-##
