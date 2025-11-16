@@ -26,20 +26,13 @@ Second Largest Element
 
 Find the second largest number from a list (without sorting).
 
-Reverse List Without reverse()
-
+Reverse List Without reverse(
 Use a loop to reverse a list manually.
 
 Merge and Sort Two Lists
-
 Given two lists, merge and sort them in ascending order.
 
-List of Squares
-
-Create a new list containing squares of all numbers from 1 to N.
-
 Find Common Elements
-
 Input: two lists → output: elements that appear in both.
 
 Frequency Counter (List)
