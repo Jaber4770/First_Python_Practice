@@ -49,7 +49,6 @@ Input: {"a":1, "b":2, "c":3}
 Output: {1:"a", 2:"b", 3:"c"}
 
 Find Key with Maximum Value
-
 Given a dictionary of items and prices, print the item with the highest price.
 
 Merge Two Dictionaries
