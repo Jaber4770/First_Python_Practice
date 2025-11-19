@@ -41,9 +41,7 @@ Count how many times each number appears in a list and print results (e.g. {2:3,
 🟨 Dictionary-Based Problems (11–20)
 
 Word Length Dictionary
-
 Input: ["apple", "banana", "cherry"]
-
 Output: {"apple":5, "banana":6, "cherry":6}
 
 Invert Key-Value Pairs
