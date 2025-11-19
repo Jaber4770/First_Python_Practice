@@ -45,9 +45,7 @@ Input: ["apple", "banana", "cherry"]
 Output: {"apple":5, "banana":6, "cherry":6}
 
 Invert Key-Value Pairs
-
 Input: {"a":1, "b":2, "c":3}
-
 Output: {1:"a", 2:"b", 3:"c"}
 
 Find Key with Maximum Value
