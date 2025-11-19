@@ -36,7 +36,6 @@ Find Common Elements
 Input: two lists → output: elements that appear in both.
 
 Frequency Counter (List)
-
 Count how many times each number appears in a list and print results (e.g. {2:3, 3:1, 5:2}).
 
 🟨 Dictionary-Based Problems (11–20)
