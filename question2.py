@@ -55,9 +55,7 @@ Merge Two Dictionaries
 Combine two dictionaries into one (if same key → add values).
 
 Group Words by First Letter
-
 Input: ["cat","car","dog","apple","door"]
-
 Output: {'c':['cat','car'], 'd':['dog','door'], 'a':['apple']}
 
 Count Character Frequency
