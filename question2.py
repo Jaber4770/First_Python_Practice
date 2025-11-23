@@ -71,9 +71,7 @@ Find average mark, highest mark, and student with highest marks.
 Convert Two Lists into a Dictionary
 
 Input: keys = ["name","age","city"], values = ["Alice",25,"Paris"]
-
 Output: {"name":"Alice","age":25,"city":"Paris"}
-
 Remove Key from Dictionary
 
 Given a key from user input, delete it from dictionary if it exists.
