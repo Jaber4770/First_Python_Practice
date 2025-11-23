@@ -77,7 +77,6 @@ Remove Key from Dictionary
 Given a key from user input, delete it from dictionary if it exists.
 
 🧠 Bonus Tip for Exam Practice
-
 For each problem:
 
 Use loops (for, while) instead of built-in shortcuts (max(), sum(), etc.) — this gets you full marks.
