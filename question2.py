@@ -67,9 +67,7 @@ Print dictionary sorted by keys and by values.
 Student Marks Analysis
 
 Input: dictionary of student names → marks
-
 Find average mark, highest mark, and student with highest marks.
-
 Convert Two Lists into a Dictionary
 
 Input: keys = ["name","age","city"], values = ["Alice",25,"Paris"]
