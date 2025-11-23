@@ -59,15 +59,11 @@ Input: ["cat","car","dog","apple","door"]
 Output: {'c':['cat','car'], 'd':['dog','door'], 'a':['apple']}
 
 Count Character Frequency
-
 Input: "banana"
-
 Output: {'b':1, 'a':3, 'n':2}
 
 Dictionary Sorting by Key and Value
-
 Print dictionary sorted by keys and by values.
-
 Student Marks Analysis
 
 Input: dictionary of student names → marks
