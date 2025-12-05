@@ -1,4 +1,4 @@
-txt = input("enter the message to revese: ")
+txt = input("write the message to revese: ")
 reversedTxt = ''
 reversList = []
 for i in range(len(txt)-1, -1, -1):
