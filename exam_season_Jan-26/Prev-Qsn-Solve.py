@@ -105,3 +105,34 @@ lst1 = [1, 1, 2, 3, 4, 5, 6]
 lst2 = [1, 2, 3, 4, 6, 7, 8, 9, 0]
 commontResult = common_element(lst1, lst2)
 print(commontResult)
+
+
+# ------------------------------------------------
+# Alternate case
+
+def alternate_case(s):
+    result = ''
+    capitalize = True
+    
+    for x in s:
+        if capitalize:
+            result += x.upper()
+        else:
+            result += x.lower()
+        capitalize = not capitalize
+    return result
+"""     result = []
+    for i, x in enumerate(s):
+        if i % 2 == 0:
+            result.append(x.upper())
+        else:
+            result.append(x.lower())
+
+    result = ''.join(result)
+    return result """
+
+
+txt = 'a quick brown fox jumps over the lazy dog'
+alternate_case_result = alternate_case(txt)
+print(alternate_case_result)
+
