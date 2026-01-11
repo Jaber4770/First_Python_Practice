@@ -121,6 +121,7 @@ def alternate_case(s):
             result += x.lower()
         capitalize = not capitalize
     return result
+
 """     result = []
     for i, x in enumerate(s):
         if i % 2 == 0:
@@ -135,4 +136,6 @@ def alternate_case(s):
 txt = 'a quick brown fox jumps over the lazy dog'
 alternate_case_result = alternate_case(txt)
 print(alternate_case_result)
+
+# ------------------------------------------------
 
