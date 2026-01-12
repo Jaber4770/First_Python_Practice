@@ -26,14 +26,27 @@ numbers = [1,12,3,14,5,16,17,8,19,4]
 result = onlyodd(numbers)
 print(result)
 
-
-
-
 # ---------------------------------------------------------------------------
 
-
+x = 5
+if x < 10:
+    print("x is less than 10")
+else:
+    print('x is greater than 10')
+    
 # ---------------------------------------------------------------------------
 
+def digit_sum(n):
+    sum = 0
+    
+    if n == 0:
+        return 0
+    else:
+        return (n % 10) + digit_sum(n // 10)
+
+numb = 123
+sumResult = digit_sum(numb)
+print('recursively sum: ', sumResult)
 
 # ---------------------------------------------------------------------------
 
