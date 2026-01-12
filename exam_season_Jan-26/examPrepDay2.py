@@ -115,3 +115,28 @@ def changeToUpper():
 
 upperText = changeToUpper()
 print(upperText)
+
+#---------------------------
+for i in range(3):
+    if i % 2 == 0:
+        print(i)
+        
+#----------------------
+#finding all uniquie in a list:
+def all_unique(lst):
+    givenlst = lst.copy()
+    uniquelst = []
+    for x in lst:
+        if x not in uniquelst:
+            uniquelst.append(x)
+    if givenlst == uniquelst:
+        return True
+    else:
+        return False
+
+# we can solve it using set with more efficient.
+# return len(lst) == len(set(lst))
+
+thelst = [1,2,3,4,5,6,7,8]
+resultOfUnique = all_unique(thelst)
+print(resultOfUnique)
