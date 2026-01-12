@@ -50,6 +50,16 @@ print('recursively sum: ', sumResult)
 
 # ---------------------------------------------------------------------------
 
+# apply discount
+def apply_discount(price, discount_percent):
+    discount_price = price - (price * discount_percent/100)
+    rounded_discount_price = round(discount_price, 2)
+    return rounded_discount_price
+
+price = 100
+discount_parcent = 10
+discount = apply_discount(price, discount_parcent)
+print('discount: ', discount)
 
 # ---------------------------------------------------------------------------
 
