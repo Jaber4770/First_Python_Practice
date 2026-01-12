@@ -14,6 +14,19 @@ for num in my_list:
         print("num: ", num)
         
 #---------------------------------------------------------------------------
+#finding only odd num
+def onlyodd(xlist):
+    oddNum = []
+    for x in xlist:
+        if x % 2 != 0:
+            oddNum.append(x)
+    return oddNum
+
+numbers = [1,12,3,14,5,16,17,8,19,4]
+result = onlyodd(numbers)
+print(result)
+
+
 
 
 # ---------------------------------------------------------------------------
