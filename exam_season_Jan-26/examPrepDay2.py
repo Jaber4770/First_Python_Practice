@@ -107,3 +107,11 @@ def ds_oddmax(xlist):
 xs = [[1, 7, 12], [4, 2, 10, 14], [15, 3, 2, 11, 20]]
 result = ds_oddmax(xs)
 print(result)
+
+#-------------------------
+def changeToUpper():
+    textt = input("enter a text: ")
+    return textt.upper()
+
+upperText = changeToUpper()
+print(upperText)
