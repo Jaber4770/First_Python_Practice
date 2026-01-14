@@ -140,3 +140,8 @@ def all_unique(lst):
 thelst = [1,2,3,4,5,6,7,8]
 resultOfUnique = all_unique(thelst)
 print(resultOfUnique)
+
+#-----------------
+s = "Hello"
+s = "h" + s[1:]
+print(s)
