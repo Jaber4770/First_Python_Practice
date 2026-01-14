@@ -9,3 +9,13 @@ for ch in text:
         freq[ch] = 1
         
 print(freq)
+
+
+for k,v in freq.items():
+    print(k,v)
+    
+
+#---------------------
+#loop with set:
+for x in {3, 1, 2}:
+    print(x)
