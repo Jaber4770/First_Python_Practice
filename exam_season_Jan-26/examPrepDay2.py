@@ -145,3 +145,12 @@ print(resultOfUnique)
 s = "Hello"
 s = "h" + s[1:]
 print(s)
+
+#------------------------
+nums = [1, 2, 3]
+for x in nums:
+    print('x: ', x)
+
+for i in range(len(nums)):
+    print('nums: ', nums[i])
+
