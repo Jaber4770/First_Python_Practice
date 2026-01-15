@@ -13,3 +13,12 @@ def count_case(s):
 txt = 'Hello'
 result = count_case(txt)
 print(result)
+
+#---------------------------------------
+for i in range(3):
+    if i == 2:
+        break
+else:
+    print("done")
+    
+#ans: no output
