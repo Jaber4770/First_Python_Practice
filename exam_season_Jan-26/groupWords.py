@@ -32,3 +32,32 @@ def stringlist():
 
 stringResult = stringlist()
 print(stringResult)
+
+#--------------------------------
+#oddList:
+def onlyodd(xlist):
+    result = []
+    for x in xlist:
+        if x % 2 != 0:
+            result.append(x)
+    return result
+
+xlist = [1,2,3,4,26,7,8,9,19,20]
+resss = onlyodd(xlist)
+print(resss)
+
+#----------------------------------------
+def alternate_case(s):
+    capitalize = True
+    result = ''
+    for x in s:
+        if capitalize:
+            result += x.upper()
+        else:
+            result += x.lower()
+        capitalize = not capitalize
+    return result
+        
+
+s = 'a quick brown fox jumps over the lazy dog'
+print(alternate_case(s))
